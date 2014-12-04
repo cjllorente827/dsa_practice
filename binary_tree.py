@@ -22,19 +22,15 @@ class BinaryTree:
 
 		node = self.root 
 		while True:
-			if value == node.value: #because the value exists in the BST already and we have found it here
+			if value == node.value: 
+				return #because the value exists in the BST already and we have found it here
+			if value < node.value and node.lt is None:
+				node.lt = Node(value)
 				return
-
-			if value < node.value:
-				if node.lt is None:
-					node.lt = Node(value)
-					return
-				node = node.lt
-			else:
-				if node.gt is None:
-					node.gt = Node(value)
-					return
-				node = node.gt
+			if value > node.value and node.gt is None:
+				node.gt = Node(value)
+				return
+			node = node.lt if value < node.value else node.gt
 
 	def contains(self, value):
 		node = self.root
