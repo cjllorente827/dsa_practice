@@ -11,3 +11,5 @@ TODO:
 3) Do red-black tree implementation
 
 4) Do linked list implementation and comparison with dynamic arrays
+
+5) Implement quicksort, mergesort
