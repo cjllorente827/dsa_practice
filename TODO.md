@@ -12,4 +12,4 @@ TODO:
 
 4) Do linked list implementation and comparison with dynamic arrays
 
-5) Implement quicksort, mergesort
+5) Implement quicksort (in-place & out of place), mergesort, heapsort
